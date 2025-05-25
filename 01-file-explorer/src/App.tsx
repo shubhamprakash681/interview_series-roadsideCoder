@@ -17,8 +17,6 @@ const App: React.FC = () => {
     [window.innerWidth, isSidebarResizing]
   );
 
-  console.log("explorerData: ", explorerData);
-
   return (
     <div className="app-container" onMouseMove={sidebarResizeHandler} onMouseUp={() => setIsSidebarResizing(false)}>
       <div className="sidebar-panel-wrapper" style={{ width: `${sidebarWidth}%` }}>
